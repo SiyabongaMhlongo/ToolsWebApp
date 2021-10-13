@@ -5,29 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+    <link rel ="Stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 <body>
-    <h1>Login</h1>
-<% if (messages.error) { %> 
-<%= messages.error %>
-<% } %>
 
-<form action="/login" method="POST">
+    <div class=nav__loginmenu id="nav-loginmenu">
+        <i class="bx bx-menu"></i>
+    </div>
 
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div> 
+    <% if (messages.error) { %>
+    <%= messages.error %>
+    <% } %>
 
-    <div>
-        <label for="name">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div> 
+ 
 
-    <button type="submit">Login</button>
+    <form action="/index" method="POST">
+        <div class="loginpage bd-grid" id="loginpage">
+          
 
-</form>
+            <header> Login </header>
 
-<a href="/signup">Sign Up</a>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" id="email" name= "email" required>
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <a href=""><button class="button" id="start-button">Login</button></a> <br>
+            <span class="small__text">Don't have an account <a href="/signup">Sign Up</a></span>
+
+        </div>
+    </form>
+    
+
+    <section class="home" id="home" >
+        <div class="homepage bd-grid">
+
+            <img src="/Background/IndexImg.png" class="img__header">
+            <h1>Welcome to ToolsApp</h1>  
+            <h2>Organise, Create and Inspire</h2>  
 </body>
 </html>
