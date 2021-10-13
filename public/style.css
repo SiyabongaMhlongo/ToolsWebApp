@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@200&display=swap');
+*,::before,::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-width: 100%;
+}
+
+:root{
+    --brown: #b18e72;
+    --black: #1A1713;
+    --dark-grey: #C8C2B9;
+    --light-grey: #E0DDD7;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Background/Tools\ app\ Background.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.nav__loginmenu i{
+    font-size: 2.5rem;
+
+
+}
+
+.home{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    
+}
+
+.img__header{
+    height: 200px;
+    width: 200px;
+
+}
+
+h1{
+    letter-spacing: 2px;
+    line-height: 46px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 3rem;
+    color: var(--black);
+    
+}
+
+h2{
+    letter-spacing: 2px;
+    font-size: 20.71px;
+    color: var(--dark-grey);
+}
+
+
+.loginpage{
+    position: fixed;
+    border-color: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+    color: rgb(255, 254, 254); 
+    border-top: 1px solid rgba(225,255,255,.3);
+    border-left: 1px solid rgba(225,255,255,.3);
+    backdrop-filter:blur(8px);
+    text-align: center;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    transform-style: preserve-3d;
+}
+
+.show-loginpage{
+    left: 0
+}
+
+
+header{
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    color: var(--black);
+    margin-top: 20%;
+    margin-bottom: 4rem;
+}
+
+.form-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    
+}
+.form-control label{
+    display: inline-block;
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.form-control input{
+    font-size: 18px;
+    font-family: inherit;
+    border: 2px solid #b18e72;
+    border-radius: 10px;
+    display:block;
+    text-align: center;
+    margin-left: 20px;
+    padding: 10px;
+    width: 20rem;
+    height: 2rem;
+}
+
+
+
+.form-control small{
+position: absolute;
+bottom:0;
+left: 0;
+visibility: hidden;
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
+
+.button{
+    font-size: 17.49px;
+    font-weight: bolder;
+    font-family: inherit;
+    color: var(--light-grey);   
+    background-color: var(--brown);
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    height: 54px;
+    width: 269px;
+    cursor: pointer;
+}
+
+.small__text{
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--black);
+}
+
+a{
+    color: var(--black);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+                          /* SIGN UP */
+
+.signpage{
+    text-align: center;
+}                         
+
+
+.signup__header{
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    color: var(--black);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* WELCOME */
+.welcome__details{
+    text-align: center;
+    
+}
+
+.welcome_message{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.logout_message{
+    text-align: center;
+
+}
+
+  
+  
+#img__header{
+    margin-top: 50px;
+    margin-left: 5%;
+    height: 300px;
+    width: 300px;
+}
+
+#logout-button{
+    font-size: 17.49px;
+    font-weight: bolder;
+    font-family: inherit;
+    color: var(--black);   
+    background-color: var(--dark-grey);
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    height: 54px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+                /*               NAVBAR              */
+.navbar{
+    background-color: var(--brown) ;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 3rem;  
+}
+  
+.iconlinks{ 
+    text-align: center;
+    margin-left: 2.5rem;
+    font-size: 2.5rem;
+}
+  
+a{
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
+
+
+ 
+
+                  /*             MEDIA QUERIES       */
+
+@media screen and (min-width:768px){
+    .loginpage{
+        text-align: center;
+        max-width: 400px;
+    }
+
+    header{
+        font-size: 3rem;
+    }
+
+    .form-control input{
+        width: 22rem;
+    
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .signpage{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+        color: rgb(255, 254, 254); 
+        border-top: 1px solid rgba(225,255,255,.3);
+        border-left: 1px solid rgba(225,255,255,.3);
+        backdrop-filter:blur(8px);
+        height: 100vh;
+        width: 25rem;
+    }
+
+    .welcome__details{
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 27%;
+        width: 100vh;
+        
+    }
+  
+    h2{
+        color: #b18e72;
+    }
+
+    #logout-button{
+        margin-left: 5%;
+    }
+
+    .navbar{
+        text-align: center;
+    }
+    
+}
+
