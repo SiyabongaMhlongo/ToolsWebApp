@@ -114,7 +114,7 @@ header{
     text-align: center;
     margin-left: 20px;
     padding: 10px;
-    width: 20rem;
+    width: 100vh;
     height: 2rem;
 }
 
@@ -149,6 +149,7 @@ a{
 
 .signpage{
     text-align: center;
+    background-color: var(--dark-grey);
 }                         
 
 
@@ -195,6 +196,7 @@ a{
     border-radius: 50px;
     border: none;
     margin-top: 20px;
+    margin-bottom: 100px;
     padding: 10px;
     height: 54px;
     width: 200px;
