@@ -35,7 +35,7 @@ app.use(methodOverride('_method'))
 
 
 app.get('/', checkAuthenticated, (req, res) => {
-    res.render('index.ejs', { name: req.user.name })
+    res.render('index', { name: req.user.name })
 })
 
 
@@ -95,4 +95,4 @@ function checkNotAuthenticated(req, res, next){
 }
 
 
-app.listen(process.env.PORT || 5000)
+app.listen(process.env.PORT || 4000)
